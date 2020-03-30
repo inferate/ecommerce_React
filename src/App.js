@@ -1,8 +1,13 @@
 import React from "react";
-import "./App.css";
+import HomeScreen from "./screens/HomeScreen";
+import "./styles/app.css";
 
 function App() {
-  return <div className="App">teewer</div>;
+  return (
+    <>
+      <HomeScreen />
+    </>
+  );
 }
 
 export default App;
