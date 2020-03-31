@@ -1,5 +1,5 @@
 import React from "react";
-import DirectoryMenu from "../components/directory/DirectoryMenu";
+import DirectoryMenu from "../components/menu/directory/DirectoryMenu";
 import "../styles/home.page.styles.scss";
 
 const HomeScreen = () => {

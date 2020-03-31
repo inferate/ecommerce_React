@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ColectionPreview from "../../components/menu/preview/ColectionPreview";
+import CollectionPreview from "../../components/menu/preview/CollectionPreview";
 import { SHOP_DATA } from "../../data/shop.data";
 
 class ShopScreen extends Component {
@@ -11,7 +11,7 @@ class ShopScreen extends Component {
     return (
       <div className="shop-page">
         {collections.map(({ id, ...restCollectionItems }) => (
-          <ColectionPreview key={id} {...restCollectionItems} />
+          <CollectionPreview key={id} {...restCollectionItems} />
         ))}
       </div>
     );
