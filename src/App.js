@@ -24,7 +24,6 @@ class App extends React.Component {
               ...dbSnapShot.data()
             }
           });
-          console.log(this.state);
         });
       } else {
         this.setState({ currentUser: userAuth });

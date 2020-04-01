@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DefaultButton from "../../components/form/DefaultButton";
 import FormInput from "../../components/form/FormInput";
-import { signInWithGoogle } from "../../firebase/firebaseUtils";
+import { auth, signInWithGoogle } from "../../firebase/firebaseUtils";
 import "../../styles/form-input.styles.scss";
 
 class SignInScreen extends Component {
@@ -9,9 +9,15 @@ class SignInScreen extends Component {
     email: "",
     password: ""
   };
-  handleSubmit = e => {
+  handleSubmit = async e => {
     e.preventDefault();
-    this.setState({ email: "", password: "" });
+    const { email, password } = this.state;
+    try {
+      await auth.signInWithEmailAndPassword(email, password);
+      this.setState({ email: "", password: "" });
+    } catch (e) {
+      console.log(e);
+    }
   };
   handleChange = e => {
     const { value, name } = e.target;
