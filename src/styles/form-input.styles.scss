@@ -1,14 +1,6 @@
 $sub-color: grey;
 $main-color: black;
 
-.sign-in {
-  width: 30vw;
-  display: flex;
-  flex-direction: column;
-}
-.title {
-  margin: 10px 0;
-}
 @mixin shrinkLabel {
   top: -14px;
   font-size: 12px;
@@ -59,4 +51,16 @@ $main-color: black;
       @include shrinkLabel();
     }
   }
+}
+.sign-in {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  margin: 10px 0;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
 }

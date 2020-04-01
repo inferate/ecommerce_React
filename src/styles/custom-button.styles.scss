@@ -21,4 +21,12 @@
     color: black;
     border: 1px solid black;
   }
+  &.google-sign-in {
+    background-color: #db4437;
+    color: white;
+    &:hover {
+      background-color: #ce6057;
+      border: none;
+    }
+  }
 }

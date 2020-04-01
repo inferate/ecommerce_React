@@ -8,7 +8,7 @@
   .logo-container {
     height: 100%;
     width: 50px;
-    padding: 10px;
+    padding: 10px 1px;
   }
   .title {
     flex: 1;
@@ -23,6 +23,7 @@
 
     .option {
       padding: 10px 15px;
+      cursor: pointer;
     }
   }
 }
